@@ -18,7 +18,7 @@ public class mainapp {
 		// TODO Auto-generated method stub
 		
 		String inputfancyfriday, inputSunny, inputRaining;
-		boolean Fancyfriday, Sunny, Raining = false;
+		boolean Fancyfriday = false, Sunny = false, Raining = false;
 		
 		// Get input from the user
 		   Scanner input = new Scanner(System.in);
@@ -45,12 +45,25 @@ public class mainapp {
 					Raining = true;
 				}	
 		// Use if statement to decide what to wear
-					
+			if(Fancyfriday) {
+				
+				if(Sunny){
+					System.out.println("tea gown");
+				} else if(Raining){
+				System.out.println("power suit");
+				
+				//catch all 
+				} else {
+					System.out.println("long gown");
+				}
+				
+			} else {
+				System.out.println("tshirt and jeans");
+			}
 	
 					
 				}
-//				input.close();
-//				System.out.println("BOY BYE... I AINT SORRY");
+
 					}
 				
 		
